@@ -1,6 +1,6 @@
 # Laravel Movies Search (with Meilisearch + Scout + Alpine.js)
 
-A demo Laravel 11 project showing **full-text search on movies** using  
+A **full-text search on movies** using  
 - Laravel Scout  
 - Meilisearch  
 - Alpine.js frontend (instant search)
@@ -16,7 +16,9 @@ cd movies-search
 composer install
 cp .env.example .env
 php artisan key:generate
+```
 
+```bash
 php artisan migrate
 php artisan db:seed --class=MovieSeeder
 ```
@@ -32,4 +34,6 @@ docker run -it --rm -p 7700:7700 getmeili/meilisearch:latest
 php artisan scout:import App\Models\Movie
 ``` 
 
+### Demo
+[link](https://www.awesomescreenshot.com/video/43908861?key=2b3e12bbf10a8325e2b28de3fea5f7ef)
 
